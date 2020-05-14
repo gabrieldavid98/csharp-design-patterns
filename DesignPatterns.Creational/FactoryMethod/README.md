@@ -1,0 +1,2 @@
+﻿# FACTORY METHOD
+**Fac­to­ry Method** is a cre­ation­al design pat­tern that pro­vides an inter­face for cre­at­ing objects in a super­class, but allows sub­class­es to alter the type of objects that will be created.
