@@ -6,10 +6,16 @@ namespace DesignPatterns.Creational
     {
         static void Main(string[] args)
         {
-            RunFactoryMethod();
+            //RunFactoryMethod();
+            RunAbstractFactory();
+
+            Console.ReadLine();
         }
 
         public static void RunFactoryMethod() =>
-            new FactoryMethod.App(FactoryMethod.Os.Windows).Run();
+            new FactoryMethod.App(OS.Windows).Run();
+
+        public static void RunAbstractFactory() =>
+            new AbstractFactory.App(OS.Mac).Run();
     }
 }

@@ -5,24 +5,18 @@ using System.Text;
 namespace DesignPatterns.Creational.FactoryMethod
 {
 
-    public enum Os
-    {
-        Windows,
-        Web
-    }
-
     public class App
     {
         private Dialog _dialog;
 
-        public App(Os os)
+        public App(OS os)
         {
-            if (os == Os.Windows)
+            if (os == OS.Windows)
             {
                 _dialog = new WindowsDialog();
             }
 
-            if (os == Os.Web)
+            if (os == OS.Web)
             {
                 _dialog = new HtmlDialog();
             }
